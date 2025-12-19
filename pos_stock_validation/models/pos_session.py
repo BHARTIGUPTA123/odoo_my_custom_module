@@ -14,8 +14,13 @@ class PosSession(models.Model):
     @api.model
     def check_low_stock(self, session_id, needs_map):
         """
+<<<<<<< HEAD
         Only check if product exists in POS stock location.
         Returns available stock for each product.
+=======
+        Only check if product exists in POS stock locationnnnn.
+        Returns available stock for each productttttt.
+>>>>>>> d598028 ([FIX]test comment)
         """
         session = self.browse(session_id).sudo()
         config = session.config_id
